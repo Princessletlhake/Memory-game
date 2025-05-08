@@ -7,6 +7,8 @@ class Elements {
 
   createCard(){
     console.log(this.cardsNumber)
+    this.playground.style.gridTemplateRows =`repeat(${Math.sqrt(this.cardsNumber)}, 1fr)`
+    this.playground.style.gridTemplateColumns =`repeat(${Math.sqrt(this.cardsNumber)}, 1fr)`
   }
 }
 
